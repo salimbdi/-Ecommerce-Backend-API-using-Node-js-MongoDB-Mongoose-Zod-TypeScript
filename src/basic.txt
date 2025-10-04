@@ -1,0 +1,7 @@
+we will follow modular rules for api devlopment 
+
+1- interface /type for type script definition 
+2- model
+3-zod validation schema 
+controllers
+services
