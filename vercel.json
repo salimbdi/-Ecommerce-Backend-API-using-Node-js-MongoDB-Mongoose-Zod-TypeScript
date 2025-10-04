@@ -1,22 +1,15 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "dist/server.js",
-      "use": "@vercel/node",
-      "config": {
-        "tsconfig": "tsconfig.json"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "dist/server.js"
-    }
-  ],
-  "env": {
-    "MONGO_URI": "mongodb+srv://RESTFULLAPI:RESTFULLAPI@cluster0.w6oarmc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-    "JWT_SECRET": "replace_with_strong_secret"
-  }
+    "version": 2,
+    "builds": [
+        {
+            "src" : "dist/server.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes" : [
+        {
+            "src": "/(.*)",
+            "dest": "dist/server.js"
+        }
+    ]
 }
